@@ -1,0 +1,223 @@
+/* BASE STYLES */ 
+
+body {
+    color: black;
+    font-family: raleway;
+    font-size: 16px;
+}
+
+p {
+    line-height: 150%;
+    font-size: 1.1875rem;
+}
+
+h2 {
+    font-size: 3.125rem;
+    font-family: vollkorn;
+    text-transform: none;
+    color:  #B36A3E;
+    text-align: center;
+    margin: 0;
+    padding: 5% 0 0 0;
+}
+
+/* GRID */ 
+
+.full-width {
+    width: 100%;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* HEADER */ 
+
+header {
+    background-color: #87BBA2;
+    border: #87BBA2 1px solid; /* white gaps appear above and beyond header when removing border */ 
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: vollkorn;
+    font-weight: 500;
+    color: #B36A3E;
+    margin: 0;
+    padding: 0;
+}
+
+#vangbergs {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 0 0;
+    padding: 0;
+}
+
+#bb {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 1%;
+}
+
+nav ul li a {
+    color: #017F67;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* FERIEHUS */ 
+
+#feriehus h2 {
+    color: #017F67;
+    font-size: 3.125rem;
+    font-family: vollkorn;
+    text-transform: none;
+    text-align: center;
+}
+
+#feriehus {
+    border-bottom: 2px solid #87BBA2;
+    padding: 5% 0 10% 0;
+}
+
+/* OM */ 
+
+#flex-hjem {
+    padding: 3% 3%;
+    border-bottom: 2px solid #87BBA2;
+}
+
+/* VÆRELSER */ 
+
+#flex-værelser {
+    padding: 3% 3%;
+    border-bottom: 2px solid #87BBA2;
+}
+
+/* PRISER */
+
+#flex-priser {
+    padding: 3% 3%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #87BBA2;
+}
+
+#p-one {
+    width: 50%;
+    border: 3px solid #B36A3E;
+    padding: 3%;
+    margin: 0 0 5% 0;
+}
+
+/* GALLERI */ 
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    padding: 3%;
+}
+
+#galleri {
+    border-bottom: 2px solid #87BBA2;
+    padding: 5% 0 5% 0;
+}
+
+/* KONTAKT */ 
+
+#kontakt {
+    border-bottom: 2px solid #87BBA2;
+}
+
+#flex-kontakt {
+    padding: 3% 3%;
+}
+
+.k-part {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 0 3%;
+
+}
+
+/* FOOTER */ 
+
+#adresse {
+    font-family: vollkorn;
+    text-transform: none;
+    color:  #B36A3E;
+    display: flex;
+    justify-content: center;
+}
+
+/* MEDIA QUERY - DESKTOP */ 
+
+@media screen and (min-width: 1200px) {
+    #h-one, #h-two {
+        width: 45%;
+    }
+
+    #flex-hjem {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #v-one, #v-two {
+        width: 45%;
+    }
+
+    #flex-værelser {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img {
+        width: 40%;
+    }
+
+    #galleri {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .k-part {
+        width: 45%;
+    }
+
+    #flex-kontakt {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
