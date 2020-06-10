@@ -8,7 +8,7 @@ body {
 
 p {
     line-height: 150%;
-    font-size: 1.1875rem;
+    font-size: 1rem;
 }
 
 h2 {
@@ -19,7 +19,7 @@ h2 {
     color:  #B36A3E;
     text-align: center;
     margin: 0;
-    padding: 5% 0 0 0;
+    padding: 3% 0 0 0;
 }
 
 /* GRID */ 
@@ -38,7 +38,7 @@ main {
 header {
     background-color: #87BBA2;
     border: #87BBA2 1px solid; /* white gaps appear above and beyond header when removing border */ 
-    height: 300px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,19 +48,19 @@ header {
 h1 {
     text-transform: uppercase;
     font-family: vollkorn;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.75rem;
+    font-weight: 600;
     color: #B36A3E;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 #vangbergs {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5% 0 0 0;
-    padding: 0;
+    margin: 0;
+    padding: 5% 0 0 0;
 }
 
 #bb {
@@ -68,6 +68,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 0 3% 0;
 }
 
 nav {
@@ -79,35 +80,44 @@ nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    padding: 0;
+    padding: 0 0 5% 0;
+    margin: 0;
 }
 
 nav ul li {
     list-style-type: none;
-    margin: 2%;
+    margin: 0 2% 0 2%;
+    padding: 0;
 }
 
 nav ul li a {
     color: #017F67;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 /* FERIEHUS */ 
 
 #feriehus h2 {
     color: #017F67;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-family: vollkorn;
     text-transform: none;
     text-align: center;
+    padding: 0;
 }
 
 #feriehus {
     border-bottom: 2px solid #87BBA2;
-    padding: 5% 0 10% 0;
+    padding: 8% 0 8% 0;
 }
+
+#feriehus p {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+} 
 
 /* OM */ 
 
@@ -118,9 +128,20 @@ nav ul li a {
 
 /* VÆRELSER */ 
 
-#flex-værelser {
-    padding: 3% 3%;
+#v-three ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#v-three ul {
+    margin: 0;
+    padding: 0 0 3% 3%;
     border-bottom: 2px solid #87BBA2;
+}
+
+#flex-værelser {
+    padding: 3% 3% 0 3%;
 }
 
 /* PRISER */
@@ -185,32 +206,56 @@ img {
 /* MEDIA QUERY - TABLET */ 
 
 @media screen and (min-width: 768px) {
-    header {
-        height: 400px;
+    p {
+        font-size: 1rem;
     }
-
+    
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 500;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     nav ul li a {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #feriehus h2 {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+
+    #feriehus p {
+        font-size: 1rem;
     }
     
     #p-one {
         width: 60%;
     }
-} 
+
+    #v-three ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        padding: 3% 0 3% 0;
+        border-bottom: 2px solid #87BBA2;
+    }
+    
+    #v-three ul li {
+        list-style-type: none;
+        font-size: 1rem;
+    }
+
+    #flex-værelser {
+        border-bottom: 2px solid #87BBA2;
+        padding: 0 0 3% 0;
+    }
+
+
+} /* ends here.
 
 
 
@@ -219,6 +264,35 @@ img {
 @media screen and (min-width: 1200px) {
     main {
         width: 60%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav ul li a {
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+
+    #vangbergs {
+        padding: 3% 0 0 0;
+    }
+    
+    #bb {
+        padding: 0 0 2% 0;
+    }
+
+    nav ul {
+        padding: 0 0 3% 0;
     }
 
     #h-one, #h-two {
@@ -262,4 +336,4 @@ img {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-}
+} /* ends here. 
