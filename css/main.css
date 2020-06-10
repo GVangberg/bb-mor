@@ -12,7 +12,8 @@ p {
 }
 
 h2 {
-    font-size: 3.125rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     font-family: vollkorn;
     text-transform: none;
     color:  #B36A3E;
@@ -28,7 +29,7 @@ h2 {
 }
 
 main {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -37,23 +38,24 @@ main {
 header {
     background-color: #87BBA2;
     border: #87BBA2 1px solid; /* white gaps appear above and beyond header when removing border */ 
-    height: 400px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 h1 {
     text-transform: uppercase;
     font-family: vollkorn;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 700;
     color: #B36A3E;
     margin: 0;
     padding: 0;
 }
 
 #vangbergs {
-    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,21 +84,21 @@ nav ul {
 
 nav ul li {
     list-style-type: none;
-    margin: 1%;
+    margin: 2%;
 }
 
 nav ul li a {
     color: #017F67;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 /* FERIEHUS */ 
 
 #feriehus h2 {
     color: #017F67;
-    font-size: 3.125rem;
+    font-size: 1.75rem;
     font-family: vollkorn;
     text-transform: none;
     text-align: center;
@@ -131,10 +133,10 @@ nav ul li a {
 }
 
 #p-one {
-    width: 50%;
+    width: 90%;
     border: 3px solid #B36A3E;
     padding: 3%;
-    margin: 0 0 5% 0;
+    margin: 5% 0 5% 0;
 }
 
 /* GALLERI */ 
@@ -180,9 +182,45 @@ img {
     justify-content: center;
 }
 
+/* MEDIA QUERY - TABLET */ 
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    nav ul li a {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    #feriehus h2 {
+        font-size: 3rem;
+    }
+    
+    #p-one {
+        width: 60%;
+    }
+} 
+
+
+
 /* MEDIA QUERY - DESKTOP */ 
 
 @media screen and (min-width: 1200px) {
+    main {
+        width: 60%;
+    }
+
     #h-one, #h-two {
         width: 45%;
     }
@@ -199,6 +237,10 @@ img {
     #flex-værelser {
         display: flex;
         justify-content: space-around;
+    }
+
+    #p-one {
+        width: 40%;
     }
 
     .img {
